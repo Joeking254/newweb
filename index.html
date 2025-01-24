@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINGANGITECH - Creative & Digital Solutions</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts for Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Testimonials Section Styling */
+        .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            padding: 3rem 1rem;
+            background-color: #0e1632;
+            color: #fff;
+        }
+
+        .testimonial {
+            flex: 1 1 calc(45% - 2rem);
+            max-width: 500px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+
+        .testimonial h3 {
+            color: #ffc107;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial p {
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .testimonial .highlight {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        /* Buttons and Links */
+        .btn-primary {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffc107;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="hero">
+        <div class="container">
+            <!-- Navigation Bar -->
+            <nav class="navbar">
+                <img src="images/logo.png" alt="Your Business Logo" class="logo">
+                <ul class="menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="#login" class="btn-login">Log In</a>
+                    <a href="#signup" class="btn-signup">Sign Up</a>
+                </div>
+            </nav>
+            <!-- Hero Content -->
+            <div class="hero-content">
+                <h1>KINGANGITECH</h1>
+                <p>Bringing Creativity and Technology Together</p>
+                <p>Unlock premium Graphics Design, Web Development, Logo Design, Social Media Management, and Online Cyber Services to grow your business.</p>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <h3>Graphics Design</h3>
+                    <p>Stunning visuals for branding, posters, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Responsive, SEO-friendly websites for your business.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Logo Design</h3>
+                    <p>Professional logos tailored to your brand.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Social Media Management</h3>
+                    <p>Boost your online presence with expert strategies.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Online Cyber Services</h3>
+                    <p>Fast, reliable document and online processing services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/portfolio1.jpg" alt="Project 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio2.jpg" alt="Project 2">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Kingangitech is a forward-thinking organisation that seamlessly blends creativity and technology to empower businesses. Specialising in premium graphic design, web development, logo creation, social media management, and online cyber services, Kingangitech delivers innovative and tailored solutions to help brands grow and succeed. Committed to excellence and client satisfaction, Kingangitech transforms ideas into impactful results, driving business growth in the digital age.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="testimonial">
+            <h3>★★★★★</h3>
+            <p><strong>Kingangi Tech transformed our business with fresh ideas and personalized digital marketing support.</strong></p>
+            <p>In today’s digital world, having a strong online presence is essential for growth. Kingangi Tech provides expert digital marketing services that help businesses build brand awareness, drive engagement, and increase conversions.</p>
+        </div>
+        <div class="testimonial">
+            <h3>★★★★★</h3>
+            <p><strong>Our team’s expertise in digital marketing has been a game-changer in driving our growth and transformation.</strong></p>
+            <p>By sharing authentic, engaging content, you can foster real connections with your followers and turn them into loyal customers. With the right strategies, Kingangi Tech drives meaningful business growth.</p>
+            <p class="highlight">Growth Partners</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 KINGANGITECH. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
