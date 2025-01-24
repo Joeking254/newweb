@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+</head>
+<body>
+    <h1>Website Content</h1>
+    <ul>
+        <% content.forEach(item => { %>
+            <li>
+                <h2><%= item.title %></h2>
+                <p><%= item.description %></p>
+                <% if (item.imageURL) { %>
+                    <img src="<%= item.imageURL %>" alt="Content Image" style="max-width: 300px;">
+                <% } %>
+            </li>
+        <% }) %>
+    </ul>
+</body>
+</html>
